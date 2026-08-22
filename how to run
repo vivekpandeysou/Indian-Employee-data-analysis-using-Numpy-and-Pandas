@@ -1,0 +1,44 @@
+1. Clone the repository
+```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+```
+2. Install dependencies
+```bash
+   pip install pandas numpy
+```
+3. Run the script
+```bash
+   python data_clean.py
+```
+
+The cleaned dataset will be saved as `Cleaned_indian_employee_data.csv` in the same directory.
+
+## 📊 Cleaning Steps Applied
+
+| Step | Description |
+|------|-------------|
+| 1 | Load raw CSV data |
+| 2 | Check and report missing values |
+| 3 | Impute missing Salary (mean) and Performance Rating (median) |
+| 4 | Replace infinite values with NaN |
+| 5 | Fill remaining missing numeric values |
+| 6 | Remove duplicate rows |
+| 7 | Fix negative salary entries |
+| 8 | Remove statistical outliers (3σ rule) |
+| 9 | Export cleaned data to CSV |
+
+## 📈 Future Improvements
+
+- Add data visualization (distribution plots before/after cleaning)
+- Add logging for each cleaning step
+- Handle categorical column inconsistencies
+- Add unit tests
+
+## 🤝 Contributing
+
+Feel free to fork this repo and submit a pull request with improvements!
+
+## 📄 License
+
+This project is open source and available under the MIT License.
